@@ -1,0 +1,75 @@
+    /* Core styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root{
+    --inter:'Inter', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 100%;
+    max-width: 1120px;
+    padding-left: 20;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family:var(--inter);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-button{
+    background-color: #ff7500;
+    color: #fff;
+    font-size: 15px;
+    font-family: var(--inter);
+    border-radius: 4px;
+    height: 39px;
+    width: 155px;
+    border: none;
+    padding: 12px 24px;
+}
+
+    /* header section styles */
+.header-section{
+   
+    border-top: 5px solid #fe7500;
+}
+
+.header-section-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.navigation__list{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 38px;
+    margin-bottom: 38px;
+}
+.navigation__link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 500;
+    line-height: 15px;
+    font-size: 13px;
+    margin-right: 32px;
+}
+
+    /* hero-section */
+
+
