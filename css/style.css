@@ -32,25 +32,32 @@ body{
 .section-button{
     background-color: #ff7500;
     color: #fff;
-    font-size: 15px;
+    font-size: 13px;
+    line-height: 15px;
     font-family: var(--inter);
     border-radius: 4px;
     height: 39px;
     width: 155px;
     border: none;
     padding: 12px 24px;
+    transition:all .3s; 
+}
+
+.section-button:hover{
+    background-color: #ff9133;
 }
 
     /* header section styles */
 .header-section{
-   
-    border-top: 5px solid #fe7500;
-}
-
-.header-section-container{
     display: flex;
     justify-content: space-between;
     align-items: center; 
+    border-top: 5px solid #fe7500;
+    color: #fff;
+}
+
+.header-section-container{
+   
 }
 
 .navigation__list{
@@ -61,15 +68,124 @@ body{
     margin-bottom: 38px;
 }
 .navigation__link{
-    text-decoration: none;
     text-transform: uppercase;
-    color: #000000;
     font-weight: 500;
     line-height: 15px;
     font-size: 13px;
-    margin-right: 32px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #000;
+}
+
+.navigation__link:hover{
+    color: #ff9740;
 }
 
     /* hero-section */
 
+.hero-section{
+    background-color: #252420;
+    color: #fff;
+}    
 
+.orange-hr{
+    width: 80px;
+    height: 3px;
+    background-color: #fe7500;
+    border: none;
+}
+
+.hero-section__left{
+    width: 390px;
+}
+
+.hero-section__title{
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: 0.5px;
+}
+
+.hero-section__subtitle{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+}
+
+.hero-section__right{
+    padding-left: 203px;
+} 
+
+.hero-section__image{
+    width: 510px;
+    height: 510px;
+}
+
+    /* Books section styles */
+.books-section__title{
+    width: 440px;
+    line-height: 1.2;
+    font-size: 72px;
+    letter-spacing: 0.5px;
+}    
+
+.books-section__subtitle{
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.5px;
+    color: #000;
+    font-weight: bold;
+}
+
+.books-section__info{
+    font-size: 16px;
+    width: 314px;
+    font-weight: normal;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: #000;
+}
+
+
+    /* Shares section */
+.shares-section{
+    background-color: #252420;
+}
+
+.shares-section__title{
+    width: 373px;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.5px;
+    color: #fff;
+}    
+
+.shares-section__subtitle{
+    font-size: 16px;
+    line-height: 24px;/* or 24px */
+    width: 440px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+}
+
+
+    /* Footer section styles */
+
+    
+.footer-hr{
+    width: 1100px;
+    height: 2px;
+    background-color: #252420;
+}    
+
+.footer-item{
+   width: 224px;
+}
+
+.footer-link{
+    font-size: 16px;
+    line-height: 19px;
+    color: #252420;
+    text-decoration: none;
+    text-transform: uppercase;
+}
