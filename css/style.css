@@ -1,8 +1,10 @@
     /* Core styles */
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500;700&display=swap');
+
 
 :root{
-    --inter:'Inter', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --RobotoCondensed: 'Roboto Condensed', sans-serif;
 }
 
 html{
@@ -20,10 +22,13 @@ html{
 body{
     margin: 0;
     padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: var(--Roboto);
+    letter-spacing: 0.5px;
 }
 
 *{
-    font-family:var(--inter);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -34,7 +39,7 @@ body{
     color: #fff;
     font-size: 13px;
     line-height: 15px;
-    font-family: var(--inter);
+    font-family: var(--roboto);
     border-radius: 4px;
     height: 39px;
     width: 155px;
@@ -100,16 +105,13 @@ body{
 }
 
 .hero-section__title{
+    font-family: var(--RobotoCondensed);
     font-size: 40px;
     line-height: 120%;
-    letter-spacing: 0.5px;
 }
 
 .hero-section__subtitle{
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.5px;
+    
 }
 
 .hero-section__right{
@@ -132,6 +134,7 @@ body{
 .books-section__title{
     width: 440px;
     line-height: 1.2;
+    font-family: var(--RobotoCondensed);
     font-size: 72px;
     letter-spacing: 0.5px;
 }    
@@ -143,17 +146,14 @@ body{
 .books-section__subtitle{
     font-size: 24px;
     line-height: 120%;
-    letter-spacing: 0.5px;
+    font-family: var(--RobotoCondensed);
     color: #000;
     font-weight: bold;
 }
 
 .books-section__info{
-    font-size: 16px;
     width: 314px;
     font-weight: normal;
-    line-height: 150%;
-    letter-spacing: 0.5px;
     color: #000;
 }
 
@@ -170,15 +170,14 @@ body{
 
 .shares-section__title{
     width: 373px;
+    font-family: var(--RobotoCondensed);
     font-size: 40px;
     line-height: 48px;
     letter-spacing: 0.5px;
 }    
 
 .shares-section__subtitle{
-    font-size: 16px;
-    line-height: 24px;/* or 24px */
-    letter-spacing: 0.5px;
+  
 }
 
 .shares-highlight{
@@ -209,6 +208,7 @@ body{
 }
 
 .footer-items{
+    line-height: 19px;
     width: 224px;
 }
 
@@ -217,8 +217,6 @@ body{
 }
 
 .footer-link{
-    font-size: 16px;
-    line-height: 19px;
     color: #252420;
     text-decoration: none;
     
