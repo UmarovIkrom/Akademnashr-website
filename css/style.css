@@ -61,16 +61,15 @@ body{
     color: #fff;
 }
 
-.header-section-container{
-   
+.header-section__right{
+    display: flex;
+    align-items: center;
 }
 
 .navigation__list{
     display: flex;
     justify-content: space-between;
     list-style: none;
-    margin-top: 38px;
-    margin-bottom: 38px;
 }
 .navigation__link{
     text-transform: uppercase;
@@ -89,6 +88,9 @@ body{
     /* hero-section */
 
 .hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #252420;
     color: #fff;
 }    
@@ -115,7 +117,7 @@ body{
 }
 
 .hero-section__right{
-    padding-left: 203px;
+    /* padding-left: 203px; */
 } 
 
 .hero-section__image{
@@ -124,6 +126,13 @@ body{
 }
 
     /* Books section styles */
+.books-section__items{
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+}
+
 .books-section__icon{
     width: 100px;
     height: 100px;
@@ -160,6 +169,9 @@ body{
 
     /* Shares section */
 .shares-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #252420;
     color: #fff;
 }
@@ -196,15 +208,30 @@ body{
 .footer-section{
     background-color: #f8f8f8;
 }
+
+.footer-section__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons__list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons__item{
+    list-style: none;
+}
     
 .footer-hr{
-    width: 1100px;
     height: 2px;
     background-color: rgba(37, 36, 32, 0.5);
 }    
 
-.footer-bottom{
-
+.footer-section__bottom{
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-items{
@@ -219,5 +246,4 @@ body{
 .footer-link{
     color: #252420;
     text-decoration: none;
-    
 }
