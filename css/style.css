@@ -34,6 +34,11 @@ body{
     box-sizing: border-box;
 }
 
+*:focus{
+    outline: 2px dotted #ff7500;
+    outline-offset: 3px;
+}
+
 .section-button{
     background-color: #ff7500;
     color: #fff;
@@ -45,11 +50,15 @@ body{
     width: 155px;
     border: none;
     padding: 12px 24px;
-    transition:all .3s; 
+    transition: opacity 0.4s ease;
 }
 
 .section-button:hover{
-    background-color: #ff9133;
+    opacity: 0.8;
+}
+
+.section-button:active{
+    opacity: 0.6;
 }
 
     /* header section styles */
@@ -59,6 +68,18 @@ body{
     align-items: center; 
     border-top: 5px solid #fe7500;
     color: #fff;
+}
+
+.logo-link{
+    transition: opacity 0.4s ease;
+}
+
+.logo-link:hover{
+    opacity: 0.8;
+}
+
+.logo-link:active{
+    opacity: 0.6;
 }
 
 .header-section__right{
@@ -79,10 +100,15 @@ body{
     letter-spacing: 1px;
     text-decoration: none;
     color: #000;
+    transition: color 0.4s ease, opacity 0.4s ease;
 }
 
 .navigation__link:hover{
-    color: #ff9740;
+    color: #ff7500;
+}
+
+.navigation__link:active{
+    opacity: 0.6;
 }
 
     /* hero-section */
@@ -223,6 +249,19 @@ body{
 .social-icons__item{
     list-style: none;
 }
+
+.social-icons__link{
+    color: #252420;
+}
+
+.social-icons__link:hover{
+    color: #ff7500;
+}
+
+.social-icons__link:active{
+    opacity: 0.6;
+}
+
     
 .footer-hr{
     height: 2px;
@@ -247,3 +286,16 @@ body{
     color: #252420;
     text-decoration: none;
 }
+
+.footer-link:hover{
+    color: #ff7500;
+}
+
+.footer-link:active{
+    opacity: 0.7;
+}
+
+
+
+
+
