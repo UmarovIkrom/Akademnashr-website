@@ -13,6 +13,7 @@
     <body>
             <!-- Header section -->
         <header class="header-section">
+            <div class="header-section-container container">
                 <a href="./index.html" class="logo-link">
                     <img src="./images/logo.svg" alt="akademnashr logo" width="227" height="60">
                 </a>
@@ -37,35 +38,37 @@
                        Ro'yhatdan o'tish
                     </button>
                 </div>
+            </div>
         </header>    
             <!-- Main section -->
         <main class="main-section">
                 <!-- Hero section -->
             <section class="hero-section" id="hero-section">
-                <div class="hero-section__left">
-                    <hr class="orange-hr"></hr>
-                    <h2 class="hero-section__title">
-                        Pythonda dasturlash asoslari
-                    </h2>
-                    <p class="hero-section__subtitle">
-                        Dasturlash asoslariga oid o‘zbek tilidagi ilk eng mukammal qo‘llanma. 
-                        Kitobning har bir bo‘limi uchun maxsus video darslar yozilgan bo‘lib, 
-                        ularga kitobda ko‘rsatilgan QR kod orqali o‘tish mumkin.
-                    </p>
-                    <button type="button" class="section-button">
-                        Buyurtma berish
-                    </button>
-                </div>    
-
-                <div class="hero-section__right">
-                    <div class="hero-section__image-div">
-                        <img class="hero-section__image" src="./images/python-img.jpg" alt="books" srcset="images/python-img.jpg 1x, images/python-img@2x.jpg 2x">
+                <div class="hero-section-container container">
+                    <div class="hero-section__left">
+                        <hr class="orange-hr"></hr>
+                        <h2 class="hero-section__title">
+                            Pythonda dasturlash asoslari
+                        </h2>
+                        <p class="hero-section__subtitle">
+                            Dasturlash asoslariga oid o‘zbek tilidagi ilk eng mukammal qo‘llanma.
+                            Kitobning har bir bo‘limi uchun maxsus video darslar yozilgan bo‘lib,
+                            ularga kitobda ko‘rsatilgan QR kod orqali o‘tish mumkin.
+                        </p>
+                        <button type="button" class="section-button">
+                            Buyurtma berish
+                        </button>
+                    </div>
+                    <div class="hero-section__right">
+                        <div class="hero-section__image-div">
+                            <img class="hero-section__image" src="./images/python-img.jpg" alt="books" srcset="images/python-img.jpg 1x, images/python-img@2x.jpg 2x">
+                        </div>
                     </div>
                 </div>
             </section>
                 <!-- Books section -->
-            <section class="books-section" id="books">
-                <!-- <div class="container"> -->
+            <section class="books-section" id="books">            
+                <div class="container">
                     <hr class="books-section-hr">
                     <h2 class="books-section__title">
                         Nega Aynan Akademnashr?
@@ -81,11 +84,10 @@
                             </h3>
                             <p class="books-section__info">
                                 Akademnashr.uz saytidan o’zingizga yoqqan kitobni
-                                sodda usulda buyurtma 
+                                sodda usulda buyurtma
                                 qila olasiz.
                             </p>
                         </li>
-
                         <li class="books-section__item">
                             <div class="books-section__icon">
                                 <img src="./images/sparkles.svg" alt="books section image 2" width="56" height="56">
@@ -94,12 +96,11 @@
                                 Eng sara kitoblar
                             </h3>
                             <p class="books-section__info">
-                                Trenddagi eng ommabop, turli 
-                                auditoriyalarga mo’ljallangan har xil 
+                                Trenddagi eng ommabop, turli
+                                auditoriyalarga mo’ljallangan har xil
                                 janrdagi kitoblarni topa olasiz.
                             </p>
                         </li>
-
                         <li class="books-section__item">
                             <div class="books-section__icon">
                                 <img src="./images/lightning-bolt.svg" alt="books section image 3" width="56" height="56">
@@ -108,8 +109,8 @@
                                 Tez yetkazib berish
                             </h3>
                             <p class="books-section__info">
-                                O’zbekistonning ixtiyoriy hududiga 3 ish 
-                                kuni ichida, xalqaro buyurtmalarni 10 ish 
+                                O’zbekistonning ixtiyoriy hududiga 3 ish
+                                kuni ichida, xalqaro buyurtmalarni 10 ish
                                 kuni ichida yetkazib beriladi.
                             </p>
                         </li>
@@ -118,83 +119,89 @@
             </section>    
                 <!-- Shares section -->
             <section class="shares-section" id="shares-section">
-                <div class="shares-section__left">
-                    <h2 class="shares-section__title">
-                        Bolalar kitoblari uchun ajoyib aksiya!
-                    </h2>
-                    <div class="shares-section__subtitle-wrapper">
-                        <p class="shares-section__subtitle">
-                            Ertaklar, she’rlar, sarguzasht asarlar, fikrlashni o’stirish 
-                            uchun turli mashq qo’llanmalari va komikslar.
-                        </p>    
-                        <p class="shares-section__subtitle">   
-                            Aksiyadagi eng katta to’plamda <b class="shares-highlight">50 ta kitob</b>ni <b class="shares-highlight">350 ming</b> 
-                            so’mga (aslida 383 ming so’m) sotib olishingiz mumkin.
-                        </p>
-                    </div>
-                    <button type="button" class="section-button">
-                        Buyurtma berish
-                    </button>
-                </div>
-                <div class="shares-section__right">
-                    <div class="shares-section__image">
-                        <img src="./images/shares-img.jpg" alt="shares section image" srcset="images/shares-img.jpg 1x, images/shares-img@2x.jpg 2x">
+                <div class="container">
+                    <div class="shares-section-promo-inner">
+                        <div class="shares-section__left">
+                            <h2 class="shares-section__title">
+                                Bolalar kitoblari uchun ajoyib aksiya!
+                            </h2>
+                            <div class="shares-section__subtitle-wrapper">
+                                <p class="shares-section__subtitle">
+                                    Ertaklar, she’rlar, sarguzasht asarlar, fikrlashni o’stirish
+                                    uchun turli mashq qo’llanmalari va komikslar.
+                                </p>
+                                <p class="shares-section__subtitle">
+                                    Aksiyadagi eng katta to’plamda <b class="shares-highlight">50 ta kitob</b>ni <b class="shares-highlight">350 ming</b>
+                                    so’mga (aslida 383 ming so’m) sotib olishingiz mumkin.
+                                </p>
+                            </div>
+                            <button type="button" class="section-button">
+                                Buyurtma berish
+                            </button>
+                        </div>
+                        <div class="shares-section__right">
+                            <div class="shares-section__image">
+                                <img src="./images/shares-img.jpg" alt="shares section image" srcset="images/shares-img.jpg 1x, images/shares-img@2x.jpg 2x">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>            
         </main>
             <!-- Footer section -->
         <footer class="footer-section">
-            <div class="footer-section__top">
-                <div class="logo-link">
-                    <img src="./images/logo.svg" alt="footer section logo">
+            <div class="container">
+                <div class="footer-section__top">
+                    <div class="logo-link">
+                        <img src="./images/logo.svg" alt="footer section logo">
+                    </div>
+                    <ul class="social-icons__list">
+                        <li class="social-icons__item">
+                            <a href="#" class="social-icons__link">
+                                <i class="fab fa-telegram-plane"></i>
+                            </a>
+                        </li>
+                        <li class="social-icons__item">
+                            <a href="#" class="social-icons__link">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="social-icons__item">
+                            <a href="#" class="social-icons__link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="social-icons__list">
-                    <li class="social-icons__item">
-                        <a href="#" class="social-icons__link">
-                            <i class="fab fa-telegram-plane"></i>
-                        </a>
-                    </li>
-                    <li class="social-icons__item">
-                        <a href="#" class="social-icons__link">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="social-icons__item">
-                        <a href="#" class="social-icons__link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <hr class="footer-hr">
-            <div class="footer-section__bottom">
-                <ul class="footer-items">
-                    <li class="footer-item"><a class="footer-link" href="#hero-section">Bosh sahifa</a></li>
-                    <li class="footer-item"><a class="footer-link" href="#books">Kitoblar</a></li>
-                    <li class="footer-item"><a class="footer-link" href="#shares-section">Aksiyalar</a></li>
-                    <li class="footer-item"><a class="footer-link" href="#">Yangiliklar</a></li>
-                    <li class="footer-item"><a class="footer-link" href="#footer-section">Kontaktlar</a></li>
-                </ul>
-                <ul class="footer-items">
-                    <li class="footer-item"><a class="footer-link" href="#">Ilmiy nashrlar</a></li>
-                    <li class="footer-item"><a class="footer-link" href="#">Ilmiy-ommabop nashrlar</a></li>   
-                    <li class="footer-item"> <a class="footer-link" href="#">Ma’rifiy nashrlar</a></li>   
-                    <li class="footer-item"> <a class="footer-link" href="#">Lug’atlar</a></li>   
-                    <li class="footer-item"><a class="footer-link" href="#">Adabiy-badiiy nashrlar</a></li>   
-                    <li class="footer-item"> <a class="footer-link" href="#">Abituriyentlar uchun</a></li>   
-                    <li class="footer-item"><a class="footer-link" href="#">Bolalar uchun</a></li>   
-                </ul>
-                <ul class="footer-items">
-                    <li class="footer-item"><a class="footer-link" href="#">Ko’p so’raladigan savollar</a></li>
-                    <li class="footer-item"><a class="footer-link" href="#">Yetkazib berish haqida</a></li>
-                    <li class="footer-item"> <a class="footer-link" href="#">To’lov usullari haqida</a></li>
-                </ul>
-                <ul class="footer-items">
-                    <li class="footer-item"><a class="footer-link" href="#">Bo’sh ish o’rinlari</a></li>
-                    <li class="footer-item"><a class="footer-link" href="#">Biz bilan bog’lanish</a></li>
-                    <li class="footer-item"><a class="footer-link" href="#">Maxfiylik nizomi</a></li>
-                </ul>
+                <hr class="footer-hr">
+                <div class="footer-section__bottom">
+                    <ul class="footer-items">
+                        <li class="footer-item"><a class="footer-link" href="#hero-section">Bosh sahifa</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#books">Kitoblar</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#shares-section">Aksiyalar</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Yangiliklar</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#footer-section">Kontaktlar</a></li>
+                    </ul>
+                    <ul class="footer-items">
+                        <li class="footer-item"><a class="footer-link" href="#">Ilmiy nashrlar</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Ilmiy-ommabop nashrlar</a></li>
+                        <li class="footer-item"> <a class="footer-link" href="#">Ma’rifiy nashrlar</a></li>
+                        <li class="footer-item"> <a class="footer-link" href="#">Lug’atlar</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Adabiy-badiiy nashrlar</a></li>
+                        <li class="footer-item"> <a class="footer-link" href="#">Abituriyentlar uchun</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Bolalar uchun</a></li>
+                    </ul>
+                    <ul class="footer-items">
+                        <li class="footer-item"><a class="footer-link" href="#">Ko’p so’raladigan savollar</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Yetkazib berish haqida</a></li>
+                        <li class="footer-item"> <a class="footer-link" href="#">To’lov usullari haqida</a></li>
+                    </ul>
+                    <ul class="footer-items">
+                        <li class="footer-item"><a class="footer-link" href="#">Bo’sh ish o’rinlari</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Biz bilan bog’lanish</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Maxfiylik nizomi</a></li>
+                    </ul>
+                </div>
             </div>
         </footer>  
     </body>

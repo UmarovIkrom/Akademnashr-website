@@ -13,7 +13,7 @@ html{
 
 .container{
     width: 100%;
-    max-width: 1120px;
+    max-width: 1140px;
     padding-left: 20;
     padding-right: 20px;
     margin: 0 auto;
@@ -63,13 +63,16 @@ body{
 
     /* header section styles */
 .header-section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
     border-top: 5px solid #fe7500;
     color: #fff;
     padding-top: 16px;
     padding-bottom: 16px;
+}
+
+.header-section-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
 }
 
 .logo-link{
@@ -127,14 +130,17 @@ body{
     /* hero-section */
 
 .hero-section{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color: #252420;
     color: #fff;
     padding-top: 80px;
     padding-bottom: 80px;
 }    
+
+.hero-section-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .orange-hr{
     width: 80px;
@@ -165,7 +171,7 @@ body{
     width: 510px;
     height: 510px;
     border-radius: 8px;
-    box-shadow: 24px 24px 0px rgba(255, 117, 0, 0.6);
+    box-shadow: 24px 24px 0px 0px rgba(255, 117, 0, 0.6);
 }
 
     /* Books section styles */
@@ -200,14 +206,15 @@ body{
 }
 
 .books-section__icon{
-    width: 100px;
-    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     background-color: #ffe3cc;
     margin-bottom: 32px;
+    cursor: pointer;
 }
 
 .books-section__title{
@@ -227,6 +234,7 @@ body{
     color: #000;
     font-weight: bold;
     margin-bottom: 12px;
+    margin-top: 0;
 }
 
 .books-section__info{
@@ -237,12 +245,18 @@ body{
 
     /* Shares section styles */
 .shares-section{
+    padding-top: 120px;
+    padding-bottom: 160px;
+}
+
+.shares-section-promo-inner{
+    border-radius: 12px;
+    background-color: #252420;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #252420;
+    padding: 64px;
     color: #fff;
-    border-radius: 12px;
 }
 
 .shares-section__left{
@@ -362,6 +376,10 @@ body{
 .footer-item{
     list-style: none;
     margin-bottom: 16px;
+}
+
+.footer-item:last-child{
+    margin-bottom: 0;
 }
 
 .footer-link{
