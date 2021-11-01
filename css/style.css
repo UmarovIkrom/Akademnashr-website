@@ -128,8 +128,8 @@ body{
 }
 
     /* hero-section */
-
 .hero-section{
+    position: relative;
     background-color: #252420;
     color: #fff;
     padding-top: 80px;
@@ -149,7 +149,6 @@ body{
     border: none;
     margin: 0;
     margin-bottom: 40px;
-
 }
 
 .hero-section__title{
@@ -166,8 +165,11 @@ body{
     margin-top: 0;
     margin-bottom: 32px;
 }
-
+ 
 .hero-section__image{
+    left: 820px;
+    top: 62px;
+    position: absolute;
     width: 510px;
     height: 510px;
     border-radius: 8px;
@@ -245,6 +247,7 @@ body{
 
     /* Shares section styles */
 .shares-section{
+    position: relative;
     padding-top: 120px;
     padding-bottom: 160px;
 }
@@ -296,6 +299,9 @@ body{
     height: 440px;
     object-fit: cover;
     border-radius: 12px;
+    position: absolute;
+    left: 806px;
+    top: 35px;
 }
 
     /* Footer section styles */
